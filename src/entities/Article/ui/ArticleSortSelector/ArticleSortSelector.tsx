@@ -23,25 +23,25 @@ export const ArticleSortSelector = memo((props: ArticleSortSelectorProps) => {
     const orderOptions = useMemo<SelectOption<SortOrder>[]>(() => [
         {
             value: 'asc',
-            content: t('возрастанию'),
+            content: t('Возрастанию'),
         },
         {
             value: 'desc',
-            content: t('убыванию'),
+            content: t('Убыванию'),
         },
     ], [t]);
 
     const sortFieldOptions = useMemo<SelectOption<ArticleSortField>[]>(() => [
         {
             value: ArticleSortField.CREATED,
-            content: t('дате создания'),
+            content: t('Дате создания'),
         },
         {
             value: ArticleSortField.TITLE,
-            content: t('названию'),
+            content: t('Названию'),
         }, {
             value: ArticleSortField.VIEWS,
-            content: t('просмотрам'),
+            content: t('Просмотрам'),
         },
     ], [t]);
 
